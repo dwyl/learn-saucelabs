@@ -1,4 +1,5 @@
-# Learn SauceLabs
+# Learn SauceLabs [![Sauce Test Status](https://saucelabs.com/buildstatus/nelsonic)](https://saucelabs.com/u/nelsonic)
+
 
 > ***No Prior Experience Necessary***!
 
@@ -84,7 +85,29 @@ You should expect to see a list of the tests that have been run:
 
 ![watch the video of your test](http://i.imgur.com/wKq5rVD.png)
 
+## *Explanation*
 
+Ensure you understand the command you just ran in the terminal:
+
+```sh
+curl -X POST https://saucelabs.com/rest/v1/USERNAME/js-tests
+-u USERNAME:SAUCELABS-UNIQUE-KEY
+-d platforms='[["Windows 8", "internet explorer", "10"], ["OS X 10.8", "safari", "6"]]'
+-d url="https://saucelabs.com/test_helpers/front_tests/index.html"
+-d framework=jasmine
+-d name=sauce-sample-test
+```
+
++ `curl -X POST https://saucelabs.com/rest/v1/USERNAME/js-tests` - ***send*** a **POST request** to this REST endpoint specifying the **JS Test** we want to run.
++ `-u USERNAME:SAUCELABS-UNIQUE-KEY` - ***authenticate*** with your **Username** and **SauceLabs Key**
++ `-d platforms='[["Windows 8", "internet explorer", "10"], ["OS X 10.8", "safari", "6"]]'` - ***specify*** which **Operating System** and **Browser Version** you want to run your test in.
++ `-d url="https://saucelabs.com/test_helpers/front_tests/index.html"` - **url** you want SauceLabs to test.
++ `-d framework=jasmine` - the ***testing framework*** you want to run for this test
++ `-d name=sauce-sample-test` - ***name*** of the test you are running (*any string is valid*)
+
+### Notes:
+
++ While there are
 
 ## Conclusion
 
