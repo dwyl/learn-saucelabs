@@ -8,8 +8,9 @@
 Giving the ***people using your web/mobile app*** a ***great
 experience*** is the key to ***happiness***.  
 If you fail to find (and fix) the bugs in your project,
-because you did not test it in the target devices/browsers,  
-everyone will be sad... so take ***20 mins*** to learn about SauceLabs **Today**!
+because you did not test it in the target devices/browsers,
+everyone will be sad ...
+so take ***20 mins*** to learn about SauceLabs ***Today***!
 
 ## Who?
 
@@ -107,7 +108,13 @@ curl -X POST https://saucelabs.com/rest/v1/USERNAME/js-tests
 
 ### Notes:
 
-+ While there are
++ While the [***JS*** *tutorial*](https://docs.saucelabs.com/tutorials/js-unit-testing/)
+on SauceLabs *instructs* you to
+setup **Karma** *and* use **Mocha**, these are by no means the only options for tools.
++ ***Other***  (front-end) JavaScript testing frameworks are supported:
+including **QUnit**, **Mocha**, **Jasmine** and **YUI**.
++ It is not immediately *obvious*, but in *addition* to these existing frameworks, you can also write ***custom*** tests:
+https://docs.saucelabs.com/reference/rest-api/#js-unit-testing
 
 ## Conclusion
 
