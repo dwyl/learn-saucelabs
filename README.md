@@ -1,4 +1,4 @@
-# Learn SauceLabs [![Sauce Test Status](https://saucelabs.com/buildstatus/nelsonic)](https://saucelabs.com/u/nelsonic)
+# Learn SauceLabs [![Sauce Test Status](https://docs.saucelabs.com/images/reference/status-images/status-passing.3a137816.png)](https://saucelabs.com/u/nelsonic)
 
 
 > ***No Prior Experience Necessary***!
@@ -110,15 +110,19 @@ curl -X POST https://saucelabs.com/rest/v1/USERNAME/js-tests
 
 + While the [***JS*** *tutorial*](https://docs.saucelabs.com/tutorials/js-unit-testing/)
 on SauceLabs *instructs* you to
-setup **Karma** *and* use **Mocha**, these are by no means the only options for tools.
-+ ***Other***  (front-end) JavaScript testing frameworks are supported:
-including **QUnit**, **Mocha**, **Jasmine** and **YUI**.
-+ It is not immediately *obvious*, but in *addition* to these existing frameworks, you can also write ***custom*** tests:
+setup **Karma** *and* use **Mocha**,  
+these are by no means the only options for tools.
++ ***Other***  (front-end) JavaScript testing frameworks are supported: including **QUnit**, **Mocha**, **Jasmine** and **YUI**.
++ It is not immediately *obvious* in the docs, but in *addition* to these existing frameworks,  
+you can also write ***custom*** tests:
 https://docs.saucelabs.com/reference/rest-api/#js-unit-testing
 
 ## Conclusion
 
 ***That's it***! Now you know how to run a **Cross-Browser Test** on SauceLabs!
+
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/kimmobrunfeldt.svg)](https://saucelabs.com/u/nelsonic)
+
 
 ### What's *Next*?
 
@@ -137,5 +141,10 @@ app in Sauce: https://www.youtube.com/watch?v=Dzplh1tAwIg (dated; 2012!)
 
 ### Node.js Module
 
-+ SauceLabs recommends: https://github.com/holidayextras/node-saucelabs  
+SauceLabs *recommends*: https://github.com/holidayextras/node-saucelabs  
 (hasn't been updated in a while, but has no dependencies so should be fine)
+
+### Saucelabs Browsers
+
+The ***full list*** of *available* ***platforms and browsers*** is: https://saucelabs.com/platforms/  
+An example configuration file: http://git.io/vfAMY
