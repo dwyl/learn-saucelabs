@@ -1,4 +1,4 @@
-# Learn SauceLabs [![Sauce Test Status](https://docs.saucelabs.com/images/reference/status-images/status-passing.3a137816.png)](https://saucelabs.com/u/nelsonic)
+# Learn SauceLabs [![Sauce Test Status](https://docs.saucelabs.com/images/reference/status-images/status-passing.3a137816.png)](https://saucelabs.com/u/nelsonic) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/docdis/learn-qunit/issues) [![Join the chat at https://gitter.im/docdis/javascript-best-practice](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/docdis/?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
 > ***No Prior Experience Necessary***!
