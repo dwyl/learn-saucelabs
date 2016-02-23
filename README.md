@@ -137,11 +137,10 @@ browsers:
     version: 9..latest
 ```
 - Note: You can add as many browsers as you want! If you want to see a list of all of the available browsers on zuul then type the follow into your terminal. ```node_modules/.bin/zuul --list-available-browsers```
-- You're almost ready to run your SauceLabs tests! If you're using ES6 then you will need to bundle up your test files using webpack or browserify.
+- You're almost ready to run your SauceLabs tests! If you're using ES6 then you will need to bundle up your test files using webpack or browserify and babel.
 - Run the following in your command line in the same directory as your two files: ```node_modules/.bin/zuul --local 8080 --ui tape -- public/testBundle.js```
 (Change 'tape' to 'mocha-qunit' or whatever your testing framework is)
 - Now logon to Saucelabs to watch your tests' progress on a whole range of browsers!
-- You can add a script in your package.json that allows you to run both the bundling and test script at once! e.g. ```"zuul-test": "webpack --config ./webpack.test.config.js --progress --colors && zuul -- public/testBundle.js"``` --> now you can just run ```npm run zuul-test``` in your terminal!
 - More info on Saucelabs testing with Zuul can be found [here](https://github.com/defunctzombie/zuul/wiki/Cloud-testing)
 
 
