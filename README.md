@@ -125,23 +125,35 @@ https://docs.saucelabs.com/reference/rest-api/#js-unit-testing
 
 ## Performing SauceLab tests with a React app
 
-- Install [zuul](https://www.npmjs.com/package/zuul) by running ```npm i zuul --save-dev```. Zuul allows you to host your tests on a port and communicate your test results with SauceLabs. It uses localtunnel.me to look after tunnels for you so you don't have to bother!
-- After creating a SauceLabs account, create a file called .zuulrc in your HOME directory on your computer. Everyone running the tests from their local machine will need to do this individually. If you use atom, you can do this with the nifty shortcut: ```atom ~/.zuulrc```. In the file, save the following details:```sauce_username: myusername
-sauce_key: XXX```
-- Then create a .zuul.yml file in the ROOT directory of your project with the following format:
-```ui: tape
++ Install [zuul](https://www.npmjs.com/package/zuul) by running
+```npm i zuul --save-dev```.
+ Zuul allows you to host your tests on a port and communicate your test results with SauceLabs. It uses localtunnel.me to look after tunnels for you so you don't have to bother!
++ After creating a SauceLabs account, create a file called .zuulrc in your HOME directory on your computer. Everyone running the tests from their local machine will need to do this individually. If you use atom, you can do this with the nifty shortcut: ```atom ~/.zuulrc```. In the file, save the following details:
+```
+sauce_username: myusername
+sauce_key: XXX
+```
++ Then create a .zuul.yml file in the ROOT directory of your project with the following format:
+```
+ui: tape
 browsers:
   - name: chrome
     version: 27
   - name: ie
     version: 9..latest
 ```
-- Note: You can add as many browsers as you want! If you want to see a list of all of the available browsers on zuul then type the follow into your terminal. ```node_modules/.bin/zuul --list-available-browsers```
-- You're almost ready to run your SauceLabs tests! If you're using ES6 then you will need to bundle up your test files using webpack or browserify and babel.
-- Run the following in your command line in the same directory as your two files: ```node_modules/.bin/zuul --local 8080 --ui tape -- public/testBundle.js```
++ Note: You can add as many browsers as you want! If you want to see a list of all of the available browsers on zuul then type the follow into your terminal.
+```
+node_modules/.bin/zuul --list-available-browsers
+```
++ You're almost ready to run your SauceLabs tests! If you're using ES6 then you will need to bundle up your test files using webpack or browserify and babel.
+- Run the following in your command line in the same directory as your two files:
+```
+node_modules/.bin/zuul --local 8080 --ui tape -- public/testBundle.js
+```
 (Change 'tape' to 'mocha-qunit' or whatever your testing framework is)
-- Now logon to Saucelabs to watch your tests' progress on a whole range of browsers!
-- More info on Saucelabs testing with Zuul can be found [here](https://github.com/defunctzombie/zuul/wiki/Cloud-testing)
++ Now logon to Saucelabs to watch your tests' progress on a whole range of browsers!
++ More info on Saucelabs testing with Zuul can be found [here](https://github.com/defunctzombie/zuul/wiki/Cloud-testing)
 
 
 ### What's *Next*?
